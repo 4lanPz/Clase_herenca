@@ -2,8 +2,8 @@ public class EmpleadoPublico extends Persona{
     private String puesto;
     private String cargo;
 
-    public EmpleadoPublico (int CI, String Nombre, String Apellido, String Direccion, String Telefono, String puesto, String cargo){
-        super(CI, Nombre, Apellido, Direccion, Telefono);
+    public EmpleadoPublico (int CI, String Nombre, String Apellido, String Direccion, String Telefono,String signo, String edad, String tiempo, String puesto, String cargo){
+        super(CI, Nombre, Apellido, Direccion, Telefono, signo, Integer.parseInt(edad), tiempo);
         this.puesto = puesto;
         this.cargo = cargo;
     }

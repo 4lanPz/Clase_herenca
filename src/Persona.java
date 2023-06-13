@@ -4,15 +4,58 @@ public class Persona {
     private String Apellido;
     private String Direccion;
     private String Telefono;
+    private String signo;
+    private int edad;
+    private String tiempo;
+    private String semestre;
 
     public Persona(){
     }
-    public Persona(int CI, String nombre, String apellido, String direccion, String telefono) {
+    public Persona(int CI, String nombre, String apellido, String direccion, String telefono,String signo, int edad, String tiempo, String semestre) {
         this.CI = CI;
         Nombre = nombre;
         Apellido = apellido;
         Direccion = direccion;
         Telefono = telefono;
+        signo = signo;
+        edad = edad;
+        tiempo = tiempo;
+        semestre = semestre;
+    }
+
+    public Persona(int ci, String nombre, String apellido, String direccion, String telefono, String signo, int edad, String tiempo) {
+    }
+
+    public String getSemestre() {
+        return semestre;
+    }
+
+    public void setSemestre(String semestre) {
+        this.semestre = semestre;
+    }
+
+    public String getTiempo() {
+        return tiempo;
+    }
+
+    public void setTiempo(String tiempo) {
+        this.tiempo = tiempo;
+    }
+
+    public String getSigno() {
+        return signo;
+    }
+
+    public void setSigno(String signo) {
+        this.signo = signo;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
     }
 
     public int getCI() {
@@ -64,8 +107,16 @@ public class Persona {
     public int trabajar(){
         return 0;
     }
+    public void leer(){
+        System.out.println("El estudiante lee");
+    }
     public void tramitar(){
         System.out.println("El empleado tramita");
     }
-
+    public void correr(){
+        System.out.println("El futbolista corre");
+    }
+    public void examinar(){
+        System.out.println("El doctor examina");
+    }
 }

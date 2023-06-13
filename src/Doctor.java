@@ -3,37 +3,18 @@ public class Doctor extends Persona {
     private int codigo;
     private String horario;
     private String hospital;
-    private String signo;
-    private int edad;
 
     public Doctor(){
         super();
     }
 
-    public Doctor(int CI, String Nombre, String Apellido, String Direccion, String Telefono, String especialidad, int codigo, String horario, String hospital, String signo, int edad){
-        super(CI, Nombre, Apellido, Direccion, Telefono);
+    public Doctor(int CI, String nombre, String apellido, String direccion, String telefono,String signo, int edad, String tiempo , String especialidad, int codigo, String horario, String hospital){
+        super(CI, nombre, apellido, direccion, telefono,signo, edad, tiempo);
         this.especialidad = especialidad;
         this.codigo = codigo;
         this.horario = horario;
         this.hospital = hospital;
-        this.signo = signo;
-        this.edad = edad;
-    }
 
-    public String getSigno() {
-        return signo;
-    }
-
-    public void setSigno(String signo) {
-        this.signo = signo;
-    }
-
-    public int getEdad() {
-        return edad;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
     }
 
     public String getEspecialidad() {
@@ -68,9 +49,7 @@ public class Doctor extends Persona {
         this.hospital = hospital;
     }
 
-    public void examinar(){
-        System.out.println("El doctor examina");
-    }
+
 
     public void curar(){
         System.out.println("El doctor cura");

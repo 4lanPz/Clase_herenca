@@ -6,8 +6,8 @@ public class Estudiante extends Persona{
     public Estudiante(){
         super();
     }
-    public Estudiante(int CI, String Nombre, String Apellido, String Direccion, String Telefono, int codigo, String correo, String semestre, String carrera){
-        super(CI, Nombre, Apellido, Direccion, Telefono);
+    public Estudiante(int CI, String nombre, String apellido, String direccion, String telefono,String signo, int edad, String tiempo, int codigo, String correo, String semestre, String carrera){
+        super(CI, nombre, apellido,direccion, telefono, signo, edad, tiempo);
         this.codigo=codigo;
         this.correo=correo;
         this.semestre=semestre;
@@ -49,9 +49,7 @@ public class Estudiante extends Persona{
         System.out.println("El estudiante estudia");
     }
 
-    public void leer(){
-        System.out.println("El estudiante lee");
-    }
+
 
     public void memrizar(){
         System.out.println("El estudiante memoriza");

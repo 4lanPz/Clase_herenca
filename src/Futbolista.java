@@ -3,23 +3,14 @@ public class Futbolista extends Persona{
     private String posicion;
     private int num_camiseta;
     private String representante;
-    private String tiempo;
 
-    public Futbolista(int CI, String Nombre, String Apellido, String Direccion, String Telefono, String equipo, String posicion, int num_camiseta, String representante, String tiempo){
-        super(CI, Nombre, Apellido, Direccion, Telefono);
+    public Futbolista(int CI, String nombre, String apellido, String direccion, String telefono,String signo, int edad, String tiempo, String equipo, String posicion, int num_camiseta, String representante){
+        super(CI, nombre, apellido, direccion, telefono, signo, edad,tiempo);
         this.equipo = equipo;
         this.posicion = posicion;
         this.num_camiseta = num_camiseta;
         this.representante = representante;
-        this.tiempo = tiempo;
-    }
 
-    public String getTiempo() {
-        return tiempo;
-    }
-
-    public void setTiempo(String tiempo) {
-        this.tiempo = tiempo;
     }
 
     public String getEquipo() {
@@ -53,9 +44,7 @@ public class Futbolista extends Persona{
     public void setRepresentante(String representante) {
         this.representante = representante;
     }
-    public void correr(){
-        System.out.println("El furbolista corre");
-    }
+
     public void defender(){
         System.out.println("El furbolista defiende");
     }
